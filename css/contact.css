@@ -1,0 +1,96 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: var(--cyan-glow);
+    background: rgba(0, 240, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.info-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    color: var(--text-muted);
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 250px;
+    background: var(--secondary-dark);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    border: 1px dashed var(--glass-border);
+    margin-top: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.form-control {
+    padding: 15px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    color: var(--white);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+    border-color: var(--cyan-glow);
+    background: rgba(0, 240, 255, 0.05);
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.form-control.error {
+    border-color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

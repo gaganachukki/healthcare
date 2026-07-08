@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Stackly Healthcare</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/doctors.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="departments.html">Departments</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="btn-outline header-btn">Login <i class="ri-user-line"></i></a>
+        <i class="ri-menu-line mobile-toggle"></i>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar">
+        <i class="ri-close-line close-sidebar"></i>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="departments.html">Departments</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="btn-outline header-btn">Login</a>
+    </div>
+
+    <!-- Page Banner -->
+    <div class="page-banner reveal fade-left" style="background: linear-gradient(rgba(7, 19, 40, 0.8), rgba(7, 19, 40, 0.9)), url('assets/blog_hero.webp') no-repeat center center/cover;">
+        <h1>Healthcare <span class="text-cyan">Insights</span></h1>
+        <p>Latest articles, medical news, and health tips</p>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="section-padding reveal">
+        <div class="category-filter">
+            <button class="filter-btn active">All Articles</button>
+            <button class="filter-btn">Health Tips</button>
+            <button class="filter-btn">Nutrition</button>
+            <button class="filter-btn">Mental Wellness</button>
+            <button class="filter-btn">Medical Innovations</button>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog 1 -->
+            <div class="glass-card blog-card reveal delay-1">
+                <div class="blog-img">
+                    <img src="assets/hospital.webp" alt="Healthy Lifestyle">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Oct 15, 2026</span>
+                        <span><i class="ri-user-line"></i> Dr. Emily Davis</span>
+                    </div>
+                    <h3>10 Essential Tips for a Healthy Heart</h3>
+                    <p>Discover the best practices and dietary habits to maintain cardiovascular health and prevent heart diseases...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="glass-card blog-card reveal delay-2">
+                <div class="blog-img">
+                    <img src="assets/hospital.webp" alt="Mental Wellness">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Oct 10, 2026</span>
+                        <span><i class="ri-user-line"></i> Dr. Michael Chen</span>
+                    </div>
+                    <h3>Understanding Mental Wellness</h3>
+                    <p>Mental health is just as important as physical health. Learn how to manage stress and anxiety effectively...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="glass-card blog-card reveal delay-3">
+                <div class="blog-img">
+                    <img src="assets/hospital.webp" alt="Nutrition">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Oct 05, 2026</span>
+                        <span><i class="ri-user-line"></i> Sarah Jenkins</span>
+                    </div>
+                    <h3>The Power of Superfoods</h3>
+                    <p>Incorporate these nutrient-dense foods into your daily diet to boost immunity and energy levels...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+            
+            <!-- Blog 4 -->
+            <div class="glass-card blog-card reveal delay-1">
+                <div class="blog-img">
+                    <img src="assets/hospital.webp" alt="Innovations">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Sep 28, 2026</span>
+                        <span><i class="ri-user-line"></i> Tech Health Desk</span>
+                    </div>
+                    <h3>Future of Robotic Surgery</h3>
+                    <p>How minimally invasive robotic procedures are changing the landscape of modern surgery and recovery...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter reveal">
+            <h2 class="text-cyan">Subscribe to Our Newsletter</h2>
+            <p class="text-muted">Get the latest health updates and wellness tips delivered to your inbox.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+                <p>Providing world-class healthcare services with compassion, expertise, and innovation.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Departments</h4>
+                <ul>
+                    <li><a href="departments.html">Cardiology</a></li>
+                    <li><a href="departments.html">Neurology</a></li>
+                    <li><a href="departments.html">Orthopedics</a></li>
+                    <li><a href="departments.html">Pediatrics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul style="color: var(--text-muted);">
+                    <li style="display: flex; gap: 10px;"><i class="ri-map-pin-line text-cyan"></i> Salem, Tamilnadu</li>
+                    <li style="display: flex; gap: 10px;"><i class="ri-phone-line text-cyan"></i> +91 98765 43210</li>
+                    <li style="display: flex; gap: 10px;"><i class="ri-mail-line text-cyan"></i> info@stacklyhealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Healthcare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
+

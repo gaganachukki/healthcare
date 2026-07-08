@@ -1,0 +1,25 @@
+.dept-grid-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dept-card-large {
+    text-align: center;
+}
+
+.dept-card-large i {
+    font-size: 4rem;
+    color: var(--cyan-glow);
+    margin-bottom: 20px;
+}
+
+.dept-card-large h3 {
+    margin-bottom: 15px;
+}
+
+.dept-card-large p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}

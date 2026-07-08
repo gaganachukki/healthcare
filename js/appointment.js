@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Appointment booking specific logic
+    
+    // Ensure dates in the past cannot be selected
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    }
+});

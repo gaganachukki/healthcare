@@ -1,0 +1,59 @@
+.services-hero {
+    text-align: center;
+    padding: 150px 5% 80px;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.1) 0%, transparent 60%);
+}
+
+.health-packages {
+    background: var(--secondary-dark);
+    padding: 80px 5%;
+    margin-top: 50px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.package-card {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.package-card.popular::before {
+    content: 'Popular';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: var(--cyan-glow);
+    color: var(--primary-dark);
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.package-price {
+    font-size: 2.5rem;
+    color: var(--cyan-glow);
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.package-features {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.package-features li {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.package-features li i {
+    color: var(--cyan-glow);
+}

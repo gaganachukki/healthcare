@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Stackly Healthcare</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="departments.html">Departments</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="btn-outline header-btn">Login <i class="ri-user-line"></i></a>
+        <i class="ri-menu-line mobile-toggle"></i>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar">
+        <i class="ri-close-line close-sidebar"></i>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="departments.html">Departments</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="login.html" class="btn-outline header-btn">Login</a>
+    </div>
+
+    <!-- Page Banner -->
+    <div class="services-hero reveal fade-left" style="background: linear-gradient(rgba(7, 19, 40, 0.8), rgba(7, 19, 40, 0.9)), url('assets/services_hero.webp') no-repeat center center/cover;">
+        <h1>Healthcare <span class="text-cyan">Services</span></h1>
+        <p>Comprehensive care solutions for you and your family</p>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="section-padding reveal">
+        <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+            <div class="glass-card reveal delay-1">
+                <i class="ri-24-hours-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Emergency Care</h3>
+                <p class="text-muted">Round-the-clock emergency services with rapid response teams and state-of-the-art life support systems.</p>
+            </div>
+            <div class="glass-card reveal delay-2">
+                <i class="ri-stethoscope-fill text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Diagnostics</h3>
+                <p class="text-muted">Advanced imaging technologies including MRI, CT scan, and digital X-rays for accurate diagnosis.</p>
+            </div>
+            <div class="glass-card reveal delay-3">
+                <i class="ri-test-tube-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Laboratory</h3>
+                <p class="text-muted">Fully automated pathology lab ensuring accurate and quick test results.</p>
+            </div>
+            <div class="glass-card reveal delay-1">
+                <i class="ri-capsule-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Pharmacy</h3>
+                <p class="text-muted">24/7 in-house pharmacy stocked with genuine medicines and healthcare products.</p>
+            </div>
+            <div class="glass-card reveal delay-2">
+                <i class="ri-heart-pulse-fill text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Surgery</h3>
+                <p class="text-muted">Advanced modular operation theaters equipped for complex and minimally invasive surgeries.</p>
+            </div>
+            <div class="glass-card reveal delay-3">
+                <i class="ri-syringe-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Vaccination</h3>
+                <p class="text-muted">Comprehensive immunization programs for children, adults, and travelers.</p>
+            </div>
+            <div class="glass-card reveal delay-1">
+                <i class="ri-home-heart-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Home Care</h3>
+                <p class="text-muted">Professional nursing care, physiotherapy, and doctor visits in the comfort of your home.</p>
+            </div>
+            <div class="glass-card reveal delay-2">
+                <i class="ri-shield-check-line text-cyan" style="font-size: 3rem;"></i>
+                <h3 style="margin: 15px 0;">Insurance Support</h3>
+                <p class="text-muted">Hassle-free cashless hospitalization with major health insurance providers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Packages -->
+    <section class="health-packages reveal">
+        <div style="text-align: center;">
+            <h4 class="text-cyan">PREVENTIVE CARE</h4>
+            <h2>Health Checkup Packages</h2>
+        </div>
+        <div class="package-grid">
+            <div class="glass-card package-card reveal delay-1">
+                <h3>Basic Health</h3>
+                <div class="package-price">$99</div>
+                <p class="text-muted">Essential tests for overall health overview.</p>
+                <ul class="package-features">
+                    <li><i class="ri-check-line"></i> Complete Blood Count</li>
+                    <li><i class="ri-check-line"></i> Blood Sugar (Fasting)</li>
+                    <li><i class="ri-check-line"></i> Lipid Profile</li>
+                    <li><i class="ri-check-line"></i> Physician Consultation</li>
+                </ul>
+                <a href="contact.html" class="btn-outline" style="width: 100%;">Book Now</a>
+            </div>
+            <div class="glass-card package-card popular reveal delay-2" style="border-color: var(--cyan-glow);">
+                <h3>Comprehensive</h3>
+                <div class="package-price">$199</div>
+                <p class="text-muted">Detailed screening for major health parameters.</p>
+                <ul class="package-features">
+                    <li><i class="ri-check-line"></i> All Basic Tests</li>
+                    <li><i class="ri-check-line"></i> Liver Function Test</li>
+                    <li><i class="ri-check-line"></i> Kidney Function Test</li>
+                    <li><i class="ri-check-line"></i> ECG & Chest X-Ray</li>
+                </ul>
+                <a href="contact.html" class="btn-primary" style="width: 100%;">Book Now</a>
+            </div>
+            <div class="glass-card package-card reveal delay-3">
+                <h3>Senior Citizen</h3>
+                <div class="package-price">$149</div>
+                <p class="text-muted">Specialized tests for elderly care.</p>
+                <ul class="package-features">
+                    <li><i class="ri-check-line"></i> Comprehensive Tests</li>
+                    <li><i class="ri-check-line"></i> Bone Density Scan</li>
+                    <li><i class="ri-check-line"></i> Eye & Dental Checkup</li>
+                    <li><i class="ri-check-line"></i> Dietician Consultation</li>
+                </ul>
+                <a href="contact.html" class="btn-outline" style="width: 100%;">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">
+            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+        </div>
+                <p>Providing world-class healthcare services with compassion, expertise, and innovation.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Departments</h4>
+                <ul>
+                    <li><a href="departments.html">Cardiology</a></li>
+                    <li><a href="departments.html">Neurology</a></li>
+                    <li><a href="departments.html">Orthopedics</a></li>
+                    <li><a href="departments.html">Pediatrics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul style="color: var(--text-muted);">
+                    <li style="display: flex; gap: 10px;"><i class="ri-map-pin-line text-cyan"></i> Salem, Tamilnadu</li>
+                    <li style="display: flex; gap: 10px;"><i class="ri-phone-line text-cyan"></i> +91 98765 43210</li>
+                    <li style="display: flex; gap: 10px;"><i class="ri-mail-line text-cyan"></i> info@stacklyhealth.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stackly Healthcare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
+
+
