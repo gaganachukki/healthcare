@@ -4,6 +4,22 @@
     background: var(--primary-dark);
 }
 
+/* Custom Scrollbar for Dashboard Areas */
+.dash-nav::-webkit-scrollbar, .dash-content::-webkit-scrollbar, .dash-section::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.dash-nav::-webkit-scrollbar-track, .dash-content::-webkit-scrollbar-track, .dash-section::-webkit-scrollbar-track {
+    background: transparent;
+}
+.dash-nav::-webkit-scrollbar-thumb, .dash-content::-webkit-scrollbar-thumb, .dash-section::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 10px;
+}
+.dash-nav:hover::-webkit-scrollbar-thumb, .dash-content:hover::-webkit-scrollbar-thumb, .dash-section:hover::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+}
+
 /* Sidebar */
 .dash-sidebar {
     width: 250px;
@@ -35,8 +51,17 @@
 
 .dash-nav {
     flex: 1;
-    padding: 20px 0;
+    padding: 10px 0 20px;
     overflow-y: auto;
+}
+
+.nav-category {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 20px 25px 10px 25px;
+    font-weight: 700;
 }
 
 .dash-nav a {
@@ -88,10 +113,9 @@
 }
 
 .dash-header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: none;
 }
+
 
 .dash-toggle {
     font-size: 1.5rem;
@@ -129,9 +153,9 @@
 /* Dashboard Cards */
 .dash-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
 .stat-card {
@@ -206,8 +230,34 @@
 .status-completed { background: rgba(0, 255, 128, 0.1); color: #00ff80; }
 .status-cancelled { background: rgba(255, 77, 77, 0.1); color: #ff4d4d; }
 
+/* Tabs Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
+    .dash-content { padding: 15px; overflow-x: hidden; }
+    .dash-grid { gap: 15px; }
+    .stat-card { padding: 15px; gap: 15px; }
+    .dash-header {
+        justify-content: space-between;
+    }
+    .dash-header-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
     .dash-sidebar {
         transform: translateX(-100%);
     }
@@ -219,5 +269,393 @@
     }
     .dash-main.active {
         margin-left: 0;
+    }
+}
+
+/* --- Dashboard Mobile & Sidebar Enhancements --- */
+
+/* Sidebar Profile Box */
+.sidebar-profile-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sp-avatar {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan-glow), #0055ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.sp-info {
+    overflow: hidden;
+}
+.sp-info h4 {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sp-info p {
+    font-size: 0.8rem;
+    margin: 2px 0 5px 0;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sp-badge {
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--cyan-glow);
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Close Button Desktop Hidden */
+.close-dash-sidebar {
+    display: none;
+}
+
+/* Header Icons & Layout */
+.dash-header-left { display: flex; align-items: center; gap: 15px; }
+.dash-header-right { display: flex; align-items: center; gap: 15px; }
+.header-icon { font-size: 1.5rem; color: var(--text-light); cursor: pointer; transition: 0.3s; }
+.header-icon:hover { color: var(--cyan-glow); }
+.notification-wrapper { position: relative; display: flex; align-items: center; justify-content: center;}
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: #0055ff;
+    color: #fff;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.dash-profile-mobile {
+    display: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #0055ff;
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.mobile-header-logo { display: none; }
+.mobile-search-icon { display: none; }
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+    /* Header Layout */
+    .desktop-title { display: none !important; }
+    .desktop-profile { display: none !important; }
+    .dash-profile-mobile { display: flex !important; width: 32px !important; height: 32px !important; font-size: 0.9rem !important; flex-shrink: 0 !important; margin: 0 !important; }
+    .mobile-header-logo { display: block !important; width: 110px !important; max-width: 110px !important; height: auto !important; max-height: 25px !important; object-fit: contain !important; margin-left: 5px !important; flex-shrink: 0 !important; }
+    .mobile-search-icon { display: flex !important; align-items: center !important; justify-content: center !important; font-size: 1.4rem !important; flex-shrink: 0 !important; width: 24px !important; margin: 0 !important; padding: 0 !important; color: var(--text-light) !important; }
+    .notification-wrapper { display: flex !important; flex-shrink: 0 !important; width: 24px !important; justify-content: center !important; margin: 0 !important; }
+    .dash-header { padding: 10px 15px !important; justify-content: space-between !important; flex-wrap: nowrap !important; overflow: hidden !important; width: 100% !important; box-sizing: border-box !important; position: sticky !important; top: 0 !important; z-index: 99 !important; background: var(--secondary-dark) !important; }
+    .dash-header-left { display: flex !important; gap: 8px !important; flex: 1 !important; align-items: center !important; overflow: hidden !important; min-width: 0 !important; margin: 0 !important; padding: 0 !important; }
+    .dash-header-right { display: flex !important; gap: 12px !important; flex-shrink: 0 !important; align-items: center !important; justify-content: flex-end !important; width: auto !important; opacity: 1 !important; visibility: visible !important; transform: none !important; margin: 0 !important; padding: 0 !important; position: static !important; }
+
+    /* Full Screen Sidebar */
+    .dash-sidebar {
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw !important;
+        height: 100vh;
+        z-index: 9999;
+        transition: left 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        background: rgba(7, 19, 40, 0.98);
+        backdrop-filter: blur(15px);
+        overflow-y: auto;
+    }
+    .dash-sidebar.active {
+        left: 0;
+        transform: none; /* Override old transform */
+    }
+    .close-dash-sidebar {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--white);
+        transition: 0.3s;
+    }
+    .close-dash-sidebar:hover { color: var(--cyan-glow); }
+    
+    .dash-logo { margin-top: 15px; margin-bottom: 30px; text-align: left; padding-left: 20px;}
+    .sidebar-profile-box { margin-bottom: 30px; }
+
+    /* Chart containers — prevent canvas overflow on mobile/tablet */
+    .dash-section {
+        overflow: hidden;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .dash-section .glass-card {
+        overflow: hidden;
+        min-width: 0;
+    }
+    .dash-content canvas {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+
+/* --- Desktop Header Cleanup --- */
+.desktop-title { display: none !important; }
+.dash-toggle { display: none !important; }
+
+@media (max-width: 992px) {
+    .dash-toggle { display: inline-block !important; }
+}
+
+/* --- Desktop Search Bar --- */
+.desktop-search-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 5px 15px;
+    gap: 10px;
+    margin-left: 10px;
+}
+.desktop-search-container .header-icon {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.desktop-search {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    outline: none;
+    width: 250px;
+}
+.desktop-search::placeholder {
+    color: var(--text-muted);
+}
+@media (max-width: 992px) {
+    .desktop-search-container {
+        display: none !important;
+    }
+}
+
+/* =============================================
+   MOBILE FIX — 320px & 375px viewport support
+   ============================================= */
+@media (max-width: 480px) {
+
+    /* Prevent any horizontal overflow on the whole dashboard */
+    .dashboard-container {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .dash-main {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Reduce content area padding */
+    .dash-content {
+        padding: 10px !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Reduce glass-card padding for small screens */
+    .glass-card {
+        padding: 15px !important;
+        border-radius: 14px !important;
+    }
+
+    /* Prevent hover lift on mobile (causes layout shift) */
+    .glass-card:hover {
+        transform: none !important;
+    }
+
+    /* Stat cards — shrink icon & tighten layout */
+    .stat-card {
+        padding: 12px !important;
+        gap: 12px !important;
+    }
+
+    .stat-icon {
+        width: 45px !important;
+        height: 45px !important;
+        min-width: 45px !important;
+        font-size: 1.4rem !important;
+        border-radius: 12px !important;
+    }
+
+    .stat-details h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .stat-details p {
+        font-size: 0.8rem !important;
+    }
+
+    /* Stats grid — tighter gap */
+    .dash-grid {
+        gap: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Dash section — reduce padding */
+    .dash-section {
+        padding: 12px !important;
+        border-radius: 12px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dash-section h2 {
+        font-size: 1rem !important;
+    }
+
+    .dash-section h3 {
+        font-size: 0.95rem !important;
+    }
+
+    /* Tables — allow horizontal scroll, reduce cell padding */
+    .dash-table th,
+    .dash-table td {
+        padding: 10px 8px !important;
+        font-size: 0.8rem !important;
+        white-space: nowrap;
+    }
+
+    /* Section header — stack if needed */
+    .dash-section-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Header bar — tighter on very small screens */
+    .dash-header {
+        padding: 8px 10px !important;
+        height: auto !important;
+        min-height: 50px;
+    }
+
+    .dash-header-left {
+        gap: 6px !important;
+    }
+
+    .dash-header-right {
+        gap: 8px !important;
+    }
+
+    .mobile-header-logo {
+        width: 90px !important;
+        max-width: 90px !important;
+    }
+
+    /* Notification badge sizing */
+    .notification-badge {
+        width: 16px !important;
+        height: 16px !important;
+        font-size: 0.6rem !important;
+    }
+
+    /* Profile mobile avatar */
+    .dash-profile-mobile {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 0.75rem !important;
+    }
+}
+
+/* =============================================
+   INLINE GRID OVERRIDES — force single column
+   on small mobile for elements using inline styles
+   ============================================= */
+@media (max-width: 480px) {
+
+    /* Override inline grid-template-columns on chart/section wrapper divs */
+    .dash-content [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    /* Profile form — stack to single column */
+    .dash-content form[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    /* Profile layout — stack image above form */
+    .dash-content [style*="display: flex"][style*="gap: 30px"] {
+        flex-direction: column !important;
+        gap: 15px !important;
+        align-items: center !important;
+    }
+
+    /* Remove min-width on form containers so they don't overflow */
+    .dash-content [style*="min-width: 300px"] {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Chart canvases — constrain to parent */
+    .dash-content canvas {
+        max-width: 100% !important;
+        max-height: 220px !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Chart parent containers — prevent overflow */
+    .dash-section {
+        overflow: hidden !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .dash-section .glass-card {
+        overflow: hidden !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Chart bar placeholder — constrain */
+    .chart-placeholder {
+        height: 180px !important;
+        gap: 8px !important;
+        overflow: hidden !important;
+    }
+
+    .chart-placeholder .bar {
+        width: 25px !important;
     }
 }

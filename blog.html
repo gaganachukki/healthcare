@@ -34,6 +34,9 @@
     <!-- Mobile Sidebar -->
     <div class="sidebar">
         <i class="ri-close-line close-sidebar"></i>
+        <div class="sidebar-logo">
+            <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; margin-bottom: 40px;">
+        </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -66,7 +69,7 @@
             <!-- Blog 1 -->
             <div class="glass-card blog-card reveal delay-1">
                 <div class="blog-img">
-                    <img src="assets/hospital.webp" alt="Healthy Lifestyle">
+                    <img src="assets/blog_lifestyle.webp" alt="Healthy Lifestyle">
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
@@ -82,7 +85,7 @@
             <!-- Blog 2 -->
             <div class="glass-card blog-card reveal delay-2">
                 <div class="blog-img">
-                    <img src="assets/hospital.webp" alt="Mental Wellness">
+                    <img src="assets/blog_mental.webp" alt="Mental Wellness">
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
@@ -98,7 +101,7 @@
             <!-- Blog 3 -->
             <div class="glass-card blog-card reveal delay-3">
                 <div class="blog-img">
-                    <img src="assets/hospital.webp" alt="Nutrition">
+                    <img src="assets/blog_nutrition.webp" alt="Nutrition">
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
@@ -114,7 +117,7 @@
             <!-- Blog 4 -->
             <div class="glass-card blog-card reveal delay-1">
                 <div class="blog-img">
-                    <img src="assets/hospital.webp" alt="Innovations">
+                    <img src="assets/blog_innovation.webp" alt="Innovations">
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">
@@ -126,16 +129,84 @@
                     <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
+
+            <!-- Blog 5 -->
+            <div class="glass-card blog-card reveal delay-2">
+                <div class="blog-img">
+                    <img src="assets/blog_mental_health.webp" alt="Mental Health">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Sep 20, 2026</span>
+                        <span><i class="ri-user-line"></i> Dr. Emily Chen</span>
+                    </div>
+                    <h3>Mental Health in the Digital Age</h3>
+                    <p>Exploring the impact of continuous connectivity on our psychological well-being and how to disconnect safely...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="glass-card blog-card reveal delay-3">
+                <div class="blog-img">
+                    <img src="assets/blog_pediatrics.webp" alt="Pediatrics">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="ri-calendar-line"></i> Sep 15, 2026</span>
+                        <span><i class="ri-user-line"></i> Dr. Alan Turing</span>
+                    </div>
+                    <h3>Winter Care Tips for Toddlers</h3>
+                    <p>Essential pediatric advice on keeping your young ones warm, healthy, and protected during the colder months...</p>
+                    <a href="404.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
         </div>
 
-        <!-- Newsletter -->
-        <div class="newsletter reveal">
-            <h2 class="text-cyan">Subscribe to Our Newsletter</h2>
-            <p class="text-muted">Get the latest health updates and wellness tips delivered to your inbox.</p>
-            <form class="newsletter-form" onsubmit="event.preventDefault();">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit" class="btn-primary">Subscribe</button>
-            </form>
+
+    </section>
+
+
+    <!-- Section 1: Trending / Featured Article -->
+    <section class="section-padding" style="background: rgba(0, 240, 255, 0.02); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="container">
+            <div class="section-title text-center reveal fade-up">
+                <h2>Featured Story</h2>
+                <p>Our top recommended read for you this week.</p>
+            </div>
+            <div class="glass-card reveal fade-up" style="display: flex; flex-wrap: wrap; padding: 0; overflow: hidden; max-width: 1000px; margin: 0 auto;">
+            <div style="flex: 1; min-width: min(100%, 300px); min-height: 300px; background: url('assets/blog_brain_mapping.webp') center/cover;"></div>
+                <div style="flex: 1; padding: 40px; min-width: min(100%, 300px); display: flex; flex-direction: column; justify-content: center;">
+                    <span style="display: inline-block; padding: 5px 15px; background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border-radius: 20px; font-size: 0.8rem; margin-bottom: 15px; align-self: flex-start;">Trending</span>
+                    <h2 style="font-size: 2rem; margin-bottom: 15px;">The Future of Neurological Healing: Brain Mapping</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Discover how new AI-driven brain mapping techniques are revolutionizing the way we treat degenerative nerve diseases.</p>
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; border-top: 1px solid var(--glass-border); padding-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/dr_michael_chen.webp" alt="Author" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                        <span style="font-size: 0.9rem; font-weight: bold;">Dr. Michael Chen</span>
+                        </div>
+                        <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.9rem;">Read Full Story</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Section 3: Health Insights Newsletter -->
+    <section class="section-padding" style="background: rgba(0, 240, 255, 0.05); border-top: 1px solid var(--glass-border);">
+        <div class="container reveal fade-up">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 50px; text-align: center; border-color: var(--cyan-glow);">
+                <i class="ri-mail-send-line" style="font-size: 4rem; color: var(--cyan-glow); margin-bottom: 20px;"></i>
+                <h2>Weekly Health Insights</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">Join 50,000+ readers. Get expert medical advice, nutrition tips, and hospital updates delivered straight to your inbox.</p>
+                <form action="404.html" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+                    <input type="email" required placeholder="Enter your email address" style="flex: 1; min-width: 250px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); padding: 12px 20px; border-radius: 8px; color: #fff; outline: none;">
+                    <button type="submit" class="btn btn-primary" style="padding: 12px 30px;">Subscribe Now</button>
+                </form>
+                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 15px;">We care about your data. Unsubscribe anytime.</p>
+            </div>
         </div>
     </section>
 
@@ -150,10 +221,10 @@
         </div>
                 <p>Providing world-class healthcare services with compassion, expertise, and innovation.</p>
                 <div class="social-links">
-                    <a href="#"><i class="ri-facebook-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="404.html"><i class="ri-facebook-fill"></i></a>
+                    <a href="404.html"><i class="ri-twitter-fill"></i></a>
+                    <a href="404.html"><i class="ri-instagram-line"></i></a>
+                    <a href="404.html"><i class="ri-linkedin-fill"></i></a>
                 </div>
             </div>
             <div class="footer-col">

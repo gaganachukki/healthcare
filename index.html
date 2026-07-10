@@ -296,6 +296,200 @@
             margin-bottom: 20px;
         }
 
+        /* Care Journey */
+        .care-journey {
+            background: linear-gradient(180deg, transparent, rgba(0, 179, 204, 0.05), transparent);
+        }
+        .journey-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .journey-step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: rgba(0, 240, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--cyan-glow);
+            border: 2px dashed var(--cyan-dark);
+            transition: var(--transition-smooth);
+        }
+        .journey-step:hover .step-icon {
+            transform: scale(1.1) rotate(15deg);
+            background: var(--cyan-glow);
+            color: var(--primary-dark);
+            border-style: solid;
+        }
+        .journey-step h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .journey-step p {
+            color: var(--text-muted);
+        }
+        .journey-connector {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan-dark), transparent);
+            margin-top: -50px;
+        }
+        
+        /* Patient Story */
+        /* padding left/right removed to allow full width effect, but section-padding has it */
+        .story-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            background: url('assets/hero.webp') center/cover no-repeat;
+            position: relative;
+            padding: 60px 5%;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+        .story-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, var(--primary-dark) 40%, rgba(7, 19, 40, 0.8));
+            z-index: 1;
+        }
+        .story-image, .story-content {
+            position: relative;
+            z-index: 2;
+        }
+        .story-image {
+            flex: 0.8;
+        }
+        .story-image img {
+            width: 100%;
+            border-radius: 20px;
+            border: 3px solid var(--cyan-glow);
+            box-shadow: var(--shadow-glow);
+        }
+        .story-content {
+            flex: 1.2;
+        }
+        .quote-icon {
+            font-size: 4rem;
+            color: rgba(0, 240, 255, 0.2);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .story-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .story-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .story-author h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        /* Newsletter */
+        .newsletter-section {
+            border-top: 1px solid var(--glass-border);
+            border-bottom: 1px solid var(--glass-border);
+            background: radial-gradient(circle at 50% 50%, rgba(0, 179, 204, 0.1) 0%, transparent 70%);
+            text-align: center;
+        }
+        .newsletter-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .newsletter-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .newsletter-content p {
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .newsletter-form input {
+            flex: 1;
+            max-width: 400px;
+            padding: 15px 25px;
+            border-radius: 30px;
+            border: 1px solid var(--cyan-dark);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--white);
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+        .newsletter-form input:focus {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+        }
+
+        /* Meet Our Experts */
+        .experts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .expert-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            transition: var(--transition-smooth);
+            text-align: center;
+        }
+        .expert-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: var(--shadow-glow);
+        }
+        .expert-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 2px solid rgba(0, 240, 255, 0.1);
+        }
+        .expert-info {
+            padding: 25px 20px;
+        }
+        .expert-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+        .expert-info p {
+            color: var(--cyan-glow);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+            .story-container { flex-direction: column; text-align: center; }
+            .story-container::before { background: rgba(7, 19, 40, 0.9); }
+        }
         @media (max-width: 768px) {
             .hero {
                 flex-direction: column;
@@ -327,6 +521,12 @@
                 height: 350px;
                 transform: translate(-50%, -40%);
             }
+            .journey-container { flex-direction: column; gap: 30px; }
+            .journey-connector { width: 2px; height: 50px; margin-top: 0; background: linear-gradient(180deg, var(--cyan-dark), transparent); }
+        }
+        @media (max-width: 600px) {
+            .newsletter-form { flex-direction: column; align-items: center; }
+            .newsletter-form input, .newsletter-form button { width: 100%; max-width: 100%; }
         }
     </style>
 </head>
@@ -355,6 +555,9 @@
     <!-- Mobile Sidebar -->
     <div class="sidebar">
         <i class="ri-close-line close-sidebar"></i>
+        <div class="sidebar-logo">
+            <img src="assets/logo.webp" alt="Stackly Logo" style="height: 40px; margin-bottom: 40px;">
+        </div>
         <nav class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
@@ -438,7 +641,7 @@
                 <h4>Neurology</h4>
             </div>
             <div class="glass-card dept-card reveal delay-3">
-                <i class="ri-bone-line"></i>
+                <i class="ri-walk-line"></i>
                 <h4>Orthopedics</h4>
             </div>
             <div class="glass-card dept-card reveal delay-4">
@@ -450,7 +653,7 @@
                 <h4>Ophthalmology</h4>
             </div>
             <div class="glass-card dept-card reveal delay-2">
-                <i class="ri-tooth-line"></i>
+                <i class="ri-user-smile-line"></i>
                 <h4>Dental</h4>
             </div>
         </div>
@@ -494,7 +697,7 @@
             </div>
         </div>
         <div class="why-image reveal fade-right delay-2">
-            <img src="assets/hospital.webp" alt="Hospital Hallway">
+            <img src="assets/hospital_hallway.webp" alt="Hospital Hallway">
             <div class="exp-badge">
                 <h3>25+</h3>
                 <p>Years of<br>Excellence</p>
@@ -532,11 +735,100 @@
         </div>
     </section>
 
+    <!-- Care Journey -->
+    <section class="care-journey section-padding reveal">
+        <div class="text-center" style="text-align: center; margin-bottom: 50px;">
+            <h4 class="text-cyan">HOW IT WORKS</h4>
+            <h2>Your Journey to Recovery</h2>
+        </div>
+        <div class="journey-container">
+            <div class="journey-step reveal fade-up delay-1">
+                <div class="step-icon"><i class="ri-calendar-check-line"></i></div>
+                <h3>1. Appointment</h3>
+                <p>Easy scheduling with our specialists.</p>
+            </div>
+            <div class="journey-connector reveal delay-2"></div>
+            <div class="journey-step reveal fade-up delay-3">
+                <div class="step-icon"><i class="ri-test-tube-line"></i></div>
+                <h3>2. Diagnosis</h3>
+                <p>Advanced lab and imaging tests.</p>
+            </div>
+            <div class="journey-connector reveal delay-4"></div>
+            <div class="journey-step reveal fade-up delay-5">
+                <div class="step-icon"><i class="ri-heart-pulse-line"></i></div>
+                <h3>3. Treatment</h3>
+                <p>Personalized medical care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Story -->
+    <section class="patient-story section-padding">
+        <div class="story-container reveal">
+            <div class="story-image reveal fade-left delay-1">
+                <img src="assets/blog_lifestyle.webp" alt="Happy Patient">
+            </div>
+            <div class="story-content reveal fade-right delay-2">
+                <i class="ri-double-quotes-l quote-icon"></i>
+                <h2>"Stackly Healthcare gave me a second chance at life."</h2>
+                <p class="story-text">After struggling with chronic pain for years, the specialists here didn't just treat my symptoms; they found the root cause. The personalized attention and advanced facilities made all the difference in my recovery journey.</p>
+                <div class="story-author">
+                    <h4>Sarah Jenkins</h4>
+                    <span class="text-cyan">Recovered Patient</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Meet Our Experts -->
+    <section class="experts-section section-padding reveal">
+        <div class="text-center" style="text-align: center; margin-bottom: 50px;">
+            <h2>Meet Our Experts</h2>
+        </div>
+        <div class="experts-grid">
+            <div class="expert-card reveal fade-up delay-1">
+                <img src="assets/expert1.webp" alt="Sarah Jenkins" class="expert-image">
+                <div class="expert-info">
+                    <h3>Sarah Jenkins</h3>
+                    <p>CEO & Founder</p>
+                </div>
+            </div>
+            <div class="expert-card reveal fade-up delay-2">
+                <img src="assets/expert2.webp" alt="David Chen" class="expert-image">
+                <div class="expert-info">
+                    <h3>David Chen</h3>
+                    <p>Lead Doctor</p>
+                </div>
+            </div>
+            <div class="expert-card reveal fade-up delay-3">
+                <img src="assets/expert3.webp" alt="Emily Roberts" class="expert-image">
+                <div class="expert-info">
+                    <h3>Emily Roberts</h3>
+                    <p>Medical Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section reveal">
         <h2>Your Health Journey Starts Here</h2>
         <p style="margin-bottom: 30px; color: var(--text-muted);">Book an appointment today and take the first step towards better health.</p>
         <a href="contact.html" class="btn-primary">Book Appointment <i class="ri-arrow-right-line"></i></a>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section section-padding reveal fade-up">
+        <div class="newsletter-content">
+            <h4 class="text-cyan">STAY INFORMED</h4>
+            <h2>Subscribe to Our Health Newsletter</h2>
+            <p>Get the latest medical insights, wellness tips, and clinic updates delivered straight to your inbox.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Subscribe Now</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -550,10 +842,10 @@
         </div>
                 <p>Providing world-class healthcare services with compassion, expertise, and innovation.</p>
                 <div class="social-links">
-                    <a href="#"><i class="ri-facebook-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-fill"></i></a>
-                    <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="404.html"><i class="ri-facebook-fill"></i></a>
+                    <a href="404.html"><i class="ri-twitter-fill"></i></a>
+                    <a href="404.html"><i class="ri-instagram-line"></i></a>
+                    <a href="404.html"><i class="ri-linkedin-fill"></i></a>
                 </div>
             </div>
             <div class="footer-col">

@@ -60,13 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.innerHTML = '<i class="ri-loader-4-line ri-spin"></i> Processing...';
                 
                 setTimeout(() => {
-                    contactForm.reset();
-                    btn.innerHTML = 'Submit Request';
-                    document.getElementById('successMsg').style.display = 'block';
-                    
-                    setTimeout(() => {
-                        document.getElementById('successMsg').style.display = 'none';
-                    }, 4000);
+                    window.location.href = '404.html';
                 }, 1500);
             }
         });

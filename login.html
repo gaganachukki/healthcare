@@ -25,17 +25,17 @@
             <p style="font-size: 1.1rem; color: #a0a5b1; margin-bottom: 30px;">Sign in to access your account</p>
             
             <div class="role-toggle">
-                <div class="role-btn active" onclick="document.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                <div class="role-btn active" data-role="patient" onclick="document.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
                     <i class="ri-user-line"></i>
                     <span>Patient</span>
                 </div>
-                <div class="role-btn" onclick="document.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                <div class="role-btn" data-role="admin" onclick="document.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
                     <i class="ri-shield-user-line"></i>
                     <span>CEO/Doctors</span>
                 </div>
             </div>
 
-            <form id="loginForm" class="auth-form" onsubmit="event.preventDefault(); window.location.href='userdashboard.html';">
+            <form id="loginForm" class="auth-form" onsubmit="event.preventDefault(); handleLogin();">
                 <div class="form-group">
                     <label for="loginEmail">Email Address</label>
                     <input type="email" id="loginEmail" class="form-control" placeholder="Email Address" required oninvalid="this.setCustomValidity('Please fill in this field.')" oninput="this.setCustomValidity('')">
@@ -67,6 +67,20 @@
         </div>
     </div>
 
+    <script>
+        function handleLogin() {
+            const emailInput = document.getElementById('loginEmail');
+            if (emailInput && emailInput.value) {
+                localStorage.setItem('userEmail', emailInput.value);
+            }
+            const activeRole = document.querySelector('.role-btn.active').getAttribute('data-role');
+            if (activeRole === 'admin') {
+                window.location.href = 'admindashboard.html';
+            } else {
+                window.location.href = 'userdashboard.html';
+            }
+        }
+    </script>
     <script src="js/main.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/validation.js"></script>

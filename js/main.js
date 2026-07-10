@@ -19,18 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle && sidebar) {
         mobileToggle.addEventListener('click', () => {
             sidebar.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
     }
 
     if (closeSidebar && sidebar) {
         closeSidebar.addEventListener('click', () => {
             sidebar.classList.remove('active');
+            document.body.style.overflow = '';
         });
     }
 
     sidebarLinks.forEach(link => {
         link.addEventListener('click', () => {
             sidebar.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
 
