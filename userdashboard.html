@@ -45,7 +45,7 @@
                 <a href="#" data-target="tab-profile"><i class="ri-user-settings-line"></i> Profile</a>
             </nav>
             <div class="dash-footer">
-                <a href="index.html" style="color: #ff4d4d; display: flex; align-items: center; gap: 10px;"><i class="ri-logout-box-r-line"></i> Logout</a>
+                <a href="login.html" style="color: #ff4d4d; display: flex; align-items: center; gap: 10px;"><i class="ri-logout-box-r-line"></i> Logout</a>
             </div>
         </aside>
 
@@ -164,6 +164,18 @@
                                         <td>11:15 AM</td>
                                         <td><span class="status-badge status-cancelled">Cancelled</span></td>
                                     </tr>
+                                    <tr>
+                                        <td>Dr. Robert Wilson (Orthopedics)</td>
+                                        <td>Jul 22, 2026</td>
+                                        <td>09:00 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Sarah Johnson (Cardiology)</td>
+                                        <td>Jun 05, 2026</td>
+                                        <td>10:30 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -190,6 +202,14 @@
                                     <h4 style="margin-bottom: 5px;">Appointment Reminder</h4>
                                     <p class="text-muted" style="font-size: 0.9rem;">You have an upcoming appointment with Dr. Sarah Johnson tomorrow.</p>
                                     <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 5px;">1 day ago</span>
+                                </div>
+                            </div>
+                            <div style="padding: 15px; border: 1px solid var(--glass-border); border-radius: 10px; display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="ri-capsule-line text-cyan" style="font-size: 1.5rem; background: rgba(0, 240, 255, 0.1); padding: 10px; border-radius: 10px;"></i>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Prescription Renewed</h4>
+                                    <p class="text-muted" style="font-size: 0.9rem;">Your prescription for Atorvastatin has been renewed for 30 days.</p>
+                                    <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 5px;">2 days ago</span>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +240,84 @@
                                         <td>Cardiology</td>
                                         <td>Oct 20, 2026 - 10:00 AM</td>
                                         <td><span class="status-badge status-upcoming">Upcoming</span></td>
-                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(255, 77, 77, 0.1); color: #ff4d4d; border: 1px solid #ff4d4d; padding: 5px 10px; font-size: 0.8rem;">Cancel</button></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(255, 77, 77, 0.1); color: #ff4d4d; border: 1px solid #ff4d4d; padding: 5px 10px; font-size: 0.8rem; width: 100px;">Cancel</button></td>
                                     </tr>
                                     <tr>
                                         <td>Dr. Michael Chen</td>
                                         <td>Neurology</td>
                                         <td>Sep 15, 2026 - 02:30 PM</td>
                                         <td><span class="status-badge status-completed">Completed</span></td>
-                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem;">View Details</button></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td>Orthopedics</td>
+                                        <td>Jul 22, 2026 - 09:00 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Cardiology</td>
+                                        <td>Jun 05, 2026 - 10:30 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Emily Davis</td>
+                                        <td>Pediatrics</td>
+                                        <td>May 12, 2026 - 01:15 PM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Michael Chen</td>
+                                        <td>Neurology</td>
+                                        <td>Apr 28, 2026 - 11:00 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td>Orthopedics</td>
+                                        <td>Mar 15, 2026 - 03:45 PM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Cardiology</td>
+                                        <td>Feb 10, 2026 - 09:30 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Emily Davis</td>
+                                        <td>Pediatrics</td>
+                                        <td>Jan 22, 2026 - 02:00 PM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Michael Chen</td>
+                                        <td>Neurology</td>
+                                        <td>Dec 05, 2025 - 10:15 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td>Orthopedics</td>
+                                        <td>Nov 18, 2025 - 04:30 PM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Cardiology</td>
+                                        <td>Oct 02, 2025 - 11:45 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn" style="background: rgba(0, 240, 255, 0.1); color: var(--cyan-glow); border: 1px solid var(--cyan-glow); padding: 5px 10px; font-size: 0.8rem; width: 100px;">View Details</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -254,8 +344,99 @@
                                 </div>
                                 <button onclick="window.location.href='404.html'" class="btn btn-outline" style="width: 100%; padding: 8px;"><i class="ri-download-2-line"></i> Download</button>
                             </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                                <i class="ri-file-pdf-line" style="font-size: 2.5rem; color: #ff4d4d;"></i>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">ECG Report</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Jul 20, 2026</p>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="width: 100%; padding: 8px;"><i class="ri-download-2-line"></i> Download</button>
+                            </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                                <i class="ri-file-pdf-line" style="font-size: 2.5rem; color: #ff4d4d;"></i>
+                                <div>
+                                    <h4 style="margin-bottom: 5px;">Lipid Profile</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Jun 10, 2026</p>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="width: 100%; padding: 8px;"><i class="ri-download-2-line"></i> Download</button>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Vital Signs Trends -->
+                    <div class="dash-section">
+                        <h2>Recent Vitals Snapshot</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,77,77,0.1); color: #ff4d4d;"><i class="ri-heart-pulse-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>120/80</h3>
+                                    <p>Blood Pressure</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-drop-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>95 mg/dL</h3>
+                                    <p>Fasting Sugar</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-blaze-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>98.6°F</h3>
+                                    <p>Temperature</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Imaging Results -->
+                    <div class="dash-section">
+                        <h2>Scans & Imaging</h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; align-items: center;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">MRI Scan - Lower Back</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Ordered by Dr. Robert Wilson</p>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View Images</button>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Chest X-Ray</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Ordered by Dr. Emily Davis</p>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View Images</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Shared Reports -->
+                    <div class="dash-section">
+                        <h2>Externally Shared Reports</h2>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Report Name</th>
+                                        <th>Shared With</th>
+                                        <th>Date Shared</th>
+                                        <th>Access Expires</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Complete Blood Count</td>
+                                        <td>Dr. Alan Grant (External)</td>
+                                        <td>Oct 10, 2026</td>
+                                        <td><span class="status-badge status-upcoming">Oct 17, 2026</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-prescriptions" class="tab-content">
                     <div class="dash-section">
@@ -283,10 +464,113 @@
                                         <td>7 Days</td>
                                         <td>Dr. Emily Davis</td>
                                     </tr>
+                                    <tr>
+                                        <td><strong>Lisinopril</strong></td>
+                                        <td>10mg - 1x Daily</td>
+                                        <td>30 Days</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Metformin</strong></td>
+                                        <td>500mg - 2x Daily</td>
+                                        <td>60 Days</td>
+                                        <td>Dr. Michael Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Omeprazole</strong> (Prilosec)</td>
+                                        <td>20mg - 1x Daily</td>
+                                        <td>14 Days</td>
+                                        <td>Dr. Robert Wilson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Levothyroxine</strong> (Synthroid)</td>
+                                        <td>50mcg - 1x Daily</td>
+                                        <td>90 Days</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Amlodipine</strong> (Norvasc)</td>
+                                        <td>5mg - 1x Daily</td>
+                                        <td>30 Days</td>
+                                        <td>Dr. Michael Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Albuterol</strong> (ProAir HFA)</td>
+                                        <td>90mcg - As Needed</td>
+                                        <td>30 Days</td>
+                                        <td>Dr. Emily Davis</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Gabapentin</strong> (Neurontin)</td>
+                                        <td>300mg - 3x Daily</td>
+                                        <td>30 Days</td>
+                                        <td>Dr. Robert Wilson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sertraline</strong> (Zoloft)</td>
+                                        <td>50mg - 1x Daily</td>
+                                        <td>60 Days</td>
+                                        <td>Dr. Michael Chen</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Losartan</strong> (Cozaar)</td>
+                                        <td>50mg - 1x Daily</td>
+                                        <td>30 Days</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Azithromycin</strong> (Zithromax)</td>
+                                        <td>250mg - 1x Daily</td>
+                                        <td>5 Days</td>
+                                        <td>Dr. Emily Davis</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Refill Requests -->
+                    <div class="dash-section">
+                        <h2>Refill Requests</h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Atorvastatin (Lipitor)</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">2 Refills Remaining</p>
+                            </div>
+                            <button onclick="window.location.href='404.html'" class="btn btn-primary" style="padding: 8px 15px; font-size: 0.9rem;">Request Refill</button>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Pharmacy Preferences -->
+                    <div class="dash-section">
+                        <h2>Preferred Pharmacy</h2>
+                        <div class="glass-card stat-card" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; gap: 20px;">
+                                <i class="ri-store-2-line" style="font-size: 3rem; color: var(--cyan-glow);"></i>
+                                <div>
+                                    <h3 style="font-size: 1.5rem;">CVS Pharmacy #1042</h3>
+                                    <p style="color: var(--text-muted);">123 Main St, New York, NY</p>
+                                </div>
+                            </div>
+                            <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px;">Change</button>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Medication Adherence -->
+                    <div class="dash-section">
+                        <h2>Medication Adherence</h2>
+                        <div class="glass-card" style="padding: 20px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Weekly Adherence Score</span>
+                                <span style="color: #00ff80; font-weight: bold;">92%</span>
+                            </div>
+                            <div style="width: 100%; background: rgba(255,255,255,0.1); height: 10px; border-radius: 5px;">
+                                <div style="width: 92%; background: #00ff80; height: 100%; border-radius: 5px;"></div>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">You're doing great! Keep taking your medications as prescribed.</p>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-doctors" class="tab-content">
                     <div class="dash-section">
@@ -304,8 +588,64 @@
                                 <p style="font-size: 0.8rem; color: var(--cyan-glow); margin-bottom: 15px;">Neurology</p>
                                 <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.8rem;">Book Again</button>
                             </div>
+                            <div class="glass-card" style="padding: 20px; text-align: center;">
+                                <div style="width: 80px; height: 80px; border-radius: 50%; background: #ddd; margin: 0 auto 15px; overflow: hidden;"><img src="assets/doc_robert.webp" onerror="this.src='assets/logo.webp'" alt="Dr. Robert Wilson" style="width:100%;height:100%;object-fit:cover;"></div>
+                                <h4>Dr. Robert Wilson</h4>
+                                <p style="font-size: 0.8rem; color: var(--cyan-glow); margin-bottom: 15px;">Orthopedics</p>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.8rem;">Book Again</button>
+                            </div>
+                            <div class="glass-card" style="padding: 20px; text-align: center;">
+                                <div style="width: 80px; height: 80px; border-radius: 50%; background: #ddd; margin: 0 auto 15px; overflow: hidden;"><img src="assets/doc_emily.webp" onerror="this.src='assets/logo.webp'" alt="Dr. Emily Davis" style="width:100%;height:100%;object-fit:cover;"></div>
+                                <h4>Dr. Emily Davis</h4>
+                                <p style="font-size: 0.8rem; color: var(--cyan-glow); margin-bottom: 15px;">Pediatrics</p>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.8rem;">Book Again</button>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Suggested Specialists -->
+                    <div class="dash-section">
+                        <h2>Suggested Specialists (Based on Profile)</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px; display: flex; align-items: center; gap: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,200,0,0.1); color: #ffc800; font-size: 1.5rem; padding: 10px;"><i class="ri-eye-line"></i></div>
+                                <div>
+                                    <h4 style="margin-bottom: 2px; font-size: 1rem;">Dr. Lisa Ray</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Ophthalmology</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px; display: flex; align-items: center; gap: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80; font-size: 1.5rem; padding: 10px;"><i class="ri-drop-line"></i></div>
+                                <div>
+                                    <h4 style="margin-bottom: 2px; font-size: 1rem;">Dr. Maria Garcia</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Dermatology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Write a Review -->
+                    <div class="dash-section">
+                        <h2>Rate Your Recent Visit</h2>
+                        <div class="glass-card" style="padding: 20px; display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center;">
+                            <h4>Dr. Sarah Johnson (Oct 20, 2026)</h4>
+                            <div style="color: #ffc800; font-size: 1.5rem; cursor: pointer;">
+                                <i class="ri-star-line"></i> <i class="ri-star-line"></i> <i class="ri-star-line"></i> <i class="ri-star-line"></i> <i class="ri-star-line"></i>
+                            </div>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">How was your experience?</p>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Doctor Availability Alerts -->
+                    <div class="dash-section">
+                        <h2>Availability Alerts</h2>
+                        <div class="glass-card" style="padding: 15px; border-left: 4px solid var(--cyan-glow);">
+                            <h4 style="margin-bottom: 5px;">Cancellation Alert!</h4>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Dr. Michael Chen has a new opening tomorrow at 11:00 AM.</p>
+                            <button onclick="window.location.href='404.html'" class="btn btn-outline" style="margin-top: 10px; padding: 5px 15px; font-size: 0.8rem;">Claim Spot</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-payments" class="tab-content">
                     <div class="dash-section">
@@ -328,21 +668,182 @@
                                         <td>Oct 20, 2026</td>
                                         <td>Cardiology Consultation</td>
                                         <td>$150.00</td>
-                                        <td><span class="status-badge status-upcoming">Pending</span></td>
-                                        <td><button onclick="window.location.href='404.html'" class="btn btn-primary" style="padding: 5px 10px; font-size: 0.8rem;">Pay Now</button></td>
+                                        <td><span class="status-badge status-upcoming" style="display: inline-block; width: 100px; text-align: center;">Pending</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-primary" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Pay Now</button></td>
                                     </tr>
                                     <tr>
                                         <td>#INV-9104</td>
                                         <td>Sep 15, 2026</td>
                                         <td>Blood Test & Lab</td>
                                         <td>$85.00</td>
-                                        <td><span class="status-badge status-completed">Paid</span></td>
-                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Receipt</button></td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
                                     </tr>
+                                    <tr>
+                                        <td>#INV-8850</td>
+                                        <td>Aug 05, 2026</td>
+                                        <td>X-Ray & Consultation</td>
+                                        <td>$210.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8722</td>
+                                        <td>Jul 20, 2026</td>
+                                        <td>ECG Test</td>
+                                        <td>$120.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8610</td>
+                                        <td>Jun 10, 2026</td>
+                                        <td>Lipid Profile Test</td>
+                                        <td>$45.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8502</td>
+                                        <td>May 22, 2026</td>
+                                        <td>Pediatrics Consultation</td>
+                                        <td>$110.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8415</td>
+                                        <td>Apr 14, 2026</td>
+                                        <td>MRI Scan - Knee</td>
+                                        <td>$450.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8320</td>
+                                        <td>Mar 08, 2026</td>
+                                        <td>General Checkup</td>
+                                        <td>$75.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8211</td>
+                                        <td>Feb 19, 2026</td>
+                                        <td>Dental Cleaning</td>
+                                        <td>$95.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8150</td>
+                                        <td>Jan 30, 2026</td>
+                                        <td>Neurology Follow-up</td>
+                                        <td>$130.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-8089</td>
+                                        <td>Dec 12, 2025</td>
+                                        <td>Orthopedics Consultation</td>
+                                        <td>$150.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#INV-7995</td>
+                                        <td>Nov 05, 2025</td>
+                                        <td>Flu Vaccination</td>
+                                        <td>$35.00</td>
+                                        <td><span class="status-badge status-completed" style="display: inline-block; width: 100px; text-align: center;">Paid</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem; width: 100px; text-align: center;">Receipt</button></td>
+                                    </tr>
+                                </tbody>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Payment Methods -->
+                    <div class="dash-section">
+                        <h2>Saved Payment Methods</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                            <div class="glass-card" style="padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <i class="ri-visa-line" style="font-size: 2rem; color: #1a1f71;"></i>
+                                    <div>
+                                        <h4 style="margin-bottom: 2px;">Visa ending in 4242</h4>
+                                        <p style="font-size: 0.8rem; color: var(--text-muted);">Expires 12/28</p>
+                                    </div>
+                                </div>
+                                <span class="status-badge status-completed" style="font-size: 0.7rem;">Default</span>
+                            </div>
+                            <div class="glass-card" style="padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <i class="ri-mastercard-line" style="font-size: 2rem; color: #ff5f00;"></i>
+                                    <div>
+                                        <h4 style="margin-bottom: 2px;">Mastercard ending in 5555</h4>
+                                        <p style="font-size: 0.8rem; color: var(--text-muted);">Expires 08/27</p>
+                                    </div>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.7rem;">Make Default</button>
+                            </div>
+                            <div class="glass-card" style="padding: 15px; display: flex; align-items: center; justify-content: center; border: 1px dashed var(--glass-border); cursor: pointer;" onclick="window.location.href='404.html'">
+                                <span style="color: var(--cyan-glow);"><i class="ri-add-line"></i> Add New Card</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Insurance Information -->
+                    <div class="dash-section">
+                        <h2>Primary Insurance</h2>
+                        <div class="glass-card" style="padding: 20px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+                            <div>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Provider</p>
+                                <h4>BlueCross BlueShield</h4>
+                            </div>
+                            <div>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Member ID</p>
+                                <h4>BCB-123456789</h4>
+                            </div>
+                            <div>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Group Number</p>
+                                <h4>GRP-98765</h4>
+                            </div>
+                            <div>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Copay</p>
+                                <h4>$30.00</h4>
+                            </div>
+                            <div style="width: 100%; text-align: right; margin-top: 10px;">
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 8px 15px; font-size: 0.85rem;">Update Insurance</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Yearly Expenditure -->
+                    <div class="dash-section">
+                        <h2>Yearly Healthcare Expenses</h2>
+                        <div class="glass-card stat-card" style="padding: 20px;">
+                            <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                                <div>
+                                    <h3 style="font-size: 1.8rem;">$2,450.00</h3>
+                                    <p style="color: var(--text-muted);">Total spent in 2026</p>
+                                </div>
+                                <i class="ri-pie-chart-line" style="font-size: 2.5rem; color: var(--cyan-glow); opacity: 0.8;"></i>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 5px;">
+                                    <span>Out-of-pocket Maximum: $5,000</span>
+                                    <span>49% Reached</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 49%; background: var(--cyan-glow); height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-notifications" class="tab-content">
                     <div class="dash-section">
@@ -377,6 +878,71 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Notification Preferences -->
+                    <div class="dash-section">
+                        <h2>Notification Preferences</h2>
+                        <div class="glass-card" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Email Notifications</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Receive updates directly to your inbox.</p>
+                                </div>
+                                <div style="width: 40px; height: 20px; background: #00ff80; border-radius: 10px; position: relative; cursor: pointer;">
+                                    <div style="width: 16px; height: 16px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">SMS Alerts</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Get text messages for appointment reminders.</p>
+                                </div>
+                                <div style="width: 40px; height: 20px; background: #00ff80; border-radius: 10px; position: relative; cursor: pointer;">
+                                    <div style="width: 16px; height: 16px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Push Notifications</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Receive alerts in your browser.</p>
+                                </div>
+                                <div style="width: 40px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 10px; position: relative; cursor: pointer;">
+                                    <div style="width: 16px; height: 16px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Action Required -->
+                    <div class="dash-section">
+                        <h2>Action Required</h2>
+                        <div class="glass-card" style="padding: 15px; border-left: 4px solid #ffc800;">
+                            <div style="display: flex; gap: 15px; align-items: center;">
+                                <i class="ri-error-warning-line" style="font-size: 1.5rem; color: #ffc800;"></i>
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Update Insurance Information</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">Your current insurance card is expiring soon. Please upload a new copy.</p>
+                                </div>
+                                <button onclick="window.location.href='404.html'" class="btn btn-outline" style="margin-left: auto; padding: 5px 15px; font-size: 0.8rem;">Update Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: System Updates -->
+                    <div class="dash-section">
+                        <h2>System Updates</h2>
+                        <div class="glass-card" style="padding: 15px;">
+                            <div style="display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="ri-information-line" style="font-size: 1.5rem; color: var(--text-muted);"></i>
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">New Telehealth Feature Available</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-muted);">You can now schedule video consultations with your preferred doctors directly from the appointments tab.</p>
+                                    <span style="font-size: 0.75rem; color: var(--cyan-glow); display: block; margin-top: 5px;">Learn More <i class="ri-arrow-right-line"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-profile" class="tab-content">
                     <div class="dash-section">
@@ -413,6 +979,14 @@
                                     <div class="form-group" style="margin-bottom: 0;">
                                         <label>Blood Group</label>
                                         <input type="text" class="form-control" value="O+" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 10px; border-radius: 8px; color: #fff; width: 100%;">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Emergency Contact Name</label>
+                                        <input type="text" class="form-control" value="Jane Doe" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 10px; border-radius: 8px; color: #fff; width: 100%;">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label>Emergency Contact Phone</label>
+                                        <input type="text" class="form-control" value="+1 234 567 8901" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); padding: 10px; border-radius: 8px; color: #fff; width: 100%;">
                                     </div>
                                     <div style="grid-column: 1 / -1; margin-top: 10px;">
                                         <button type="submit" class="btn btn-primary">Save Changes</button>

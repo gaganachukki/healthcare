@@ -8,6 +8,8 @@
 .blog-card {
     padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-img {
@@ -29,6 +31,9 @@
 
 .blog-content {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .blog-meta {
@@ -72,6 +77,8 @@
     gap: 5px;
     color: var(--cyan-glow);
     font-weight: 500;
+    margin-top: auto;
+    align-self: flex-start;
 }
 
 .read-more i {

@@ -26,28 +26,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add CSS for .reveal classes dynamically
     const style = document.createElement('style');
     style.innerHTML = `
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        @media (min-width: 769px) {
+            .reveal {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .reveal.fade-left {
+                transform: translateX(-50px);
+            }
+            .reveal.fade-right {
+                transform: translateX(50px);
+            }
+            .reveal.fade-left.active, .reveal.fade-right.active {
+                transform: translateX(0);
+            }
+            .reveal.delay-1 { transition-delay: 0.1s; }
+            .reveal.delay-2 { transition-delay: 0.2s; }
+            .reveal.delay-3 { transition-delay: 0.3s; }
+            .reveal.delay-4 { transition-delay: 0.4s; }
         }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+        @media (max-width: 768px) {
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
         }
-        .reveal.fade-left {
-            transform: translateX(-50px);
-        }
-        .reveal.fade-right {
-            transform: translateX(50px);
-        }
-        .reveal.fade-left.active, .reveal.fade-right.active {
-            transform: translateX(0);
-        }
-        .reveal.delay-1 { transition-delay: 0.1s; }
-        .reveal.delay-2 { transition-delay: 0.2s; }
-        .reveal.delay-3 { transition-delay: 0.3s; }
-        .reveal.delay-4 { transition-delay: 0.4s; }
     `;
     document.head.appendChild(style);
 

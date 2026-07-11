@@ -80,7 +80,7 @@
                 <a href="#" data-target="tab-settings"><i class="ri-settings-3-line"></i> Settings</a>
             </nav>
             <div class="dash-footer">
-                <a href="index.html" style="color: #ff4d4d; display: flex; align-items: center; gap: 10px;"><i class="ri-logout-box-r-line"></i> Logout</a>
+                <a href="login.html" style="color: #ff4d4d; display: flex; align-items: center; gap: 10px;"><i class="ri-logout-box-r-line"></i> Logout</a>
             </div>
         </aside>
 
@@ -204,8 +204,61 @@
                                         <td>Pediatrics</td>
                                         <td>Today, 03:45 PM</td>
                                     </tr>
+                                    <tr>
+                                        <td>#PT-00129</td>
+                                        <td>Edward Kenway</td>
+                                        <td>Oncology</td>
+                                        <td>Yesterday, 09:15 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#PT-00130</td>
+                                        <td>Fiona Gallagher</td>
+                                        <td>Cardiology</td>
+                                        <td>Yesterday, 11:20 AM</td>
+                                    </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="dash-section">
+                        <div class="dash-section-header">
+                            <h3>Recent Activity</h3>
+                        </div>
+                        <div class="glass-card" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; gap: 15px; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <i class="ri-calendar-event-line" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 10px; border-radius: 50%; font-size: 1.2rem;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="font-size: 0.95rem; margin-bottom: 3px;">New Appointment</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Alice Smith with Dr. Sarah Johnson</p>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">5 min ago</span>
+                            </div>
+                            <div style="display: flex; gap: 15px; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <i class="ri-user-add-line" style="background: rgba(0,255,128,0.1); color: #00ff80; padding: 10px; border-radius: 50%; font-size: 1.2rem;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="font-size: 0.95rem; margin-bottom: 3px;">Patient Registered</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Edward Kenway added</p>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">1 hr ago</span>
+                            </div>
+                            <div style="display: flex; gap: 15px; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <i class="ri-file-text-line" style="background: rgba(255,200,0,0.1); color: #ffc800; padding: 10px; border-radius: 50%; font-size: 1.2rem;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="font-size: 0.95rem; margin-bottom: 3px;">Report Uploaded</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Charlie Brown - MRI Scan</p>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">2 hrs ago</span>
+                            </div>
+                            <div style="display: flex; gap: 15px; align-items: center;">
+                                <i class="ri-bank-card-line" style="background: rgba(255,77,77,0.1); color: #ff4d4d; padding: 10px; border-radius: 50%; font-size: 1.2rem;"></i>
+                                <div style="flex: 1;">
+                                    <h4 style="font-size: 0.95rem; margin-bottom: 3px;">Payment Received</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">$150.00 from Alice Smith</p>
+                                </div>
+                                <span style="font-size: 0.75rem; color: var(--text-muted); white-space: nowrap;">3 hrs ago</span>
+                            </div>
                         </div>
                     </div>
 
@@ -258,10 +311,112 @@
                                         <td><span class="status-badge status-completed">Active</span></td>
                                         <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button></td>
                                     </tr>
+                                    <tr>
+                                        <td>#PT-00128</td>
+                                        <td>Diana Prince</td>
+                                        <td>31 / F</td>
+                                        <td>Aug 22, 2026</td>
+                                        <td><span class="status-badge status-upcoming">Discharged</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#PT-00129</td>
+                                        <td>Edward Kenway</td>
+                                        <td>42 / M</td>
+                                        <td>Jul 10, 2026</td>
+                                        <td><span class="status-badge status-completed">Active</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Patient Demographics -->
+                    <div class="dash-section">
+                        <h2>Patient Demographics</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-women-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>58%</h3>
+                                    <p>Female</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-men-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>42%</h3>
+                                    <p>Male</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,200,0,0.1); color: #ffc800;"><i class="ri-group-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>35 Yrs</h3>
+                                    <p>Avg Age</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Recent Discharges -->
+                    <div class="dash-section">
+                        <div class="dash-section-header">
+                            <h3>Recent Discharges</h3>
+                        </div>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Department</th>
+                                        <th>Discharge Date</th>
+                                        <th>Follow-up</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diana Prince</td>
+                                        <td>Pediatrics</td>
+                                        <td>Oct 20, 2026</td>
+                                        <td><span class="status-badge status-upcoming">Oct 27, 2026</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edward Kenway</td>
+                                        <td>Oncology</td>
+                                        <td>Oct 19, 2026</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiona Gallagher</td>
+                                        <td>Cardiology</td>
+                                        <td>Oct 18, 2026</td>
+                                        <td><span class="status-badge status-upcoming">Oct 25, 2026</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- New Section: New Patient Registrations -->
+                    <div class="dash-section">
+                        <h2>New Patient Registrations (This Month)</h2>
+                        <div class="glass-card stat-card" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; gap: 20px;">
+                                <i class="ri-user-add-fill" style="font-size: 3rem; color: var(--cyan-glow);"></i>
+                                <div>
+                                    <h3 style="font-size: 2rem;">+452</h3>
+                                    <p style="color: var(--text-muted);">New Registrations</p>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <p style="color: #00ff80; font-weight: bold; font-size: 1.2rem;"><i class="ri-arrow-up-line"></i> 12.5%</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">vs Last Month</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-doctors" class="tab-content">
                     <div class="dash-section">
@@ -286,8 +441,124 @@
                                     <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;"><i class="ri-close-circle-fill" style="color:#ff4d4d;"></i> On Leave</p>
                                 </div>
                             </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; gap: 15px; align-items: center;">
+                                <img src="assets/doc_emily.webp" onerror="this.src='assets/logo.webp'" alt="Dr. Emily Davis" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cyan-glow);">
+                                <div>
+                                    <h4>Dr. Emily Davis</h4>
+                                    <p style="color: var(--cyan-glow); font-size: 0.8rem;">Lead Pediatrician</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;"><i class="ri-checkbox-circle-fill" style="color:#00ff80;"></i> Available Today</p>
+                                </div>
+                            </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; gap: 15px; align-items: center;">
+                                <img src="assets/doc_robert.webp" onerror="this.src='assets/logo.webp'" alt="Dr. Robert Wilson" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cyan-glow);">
+                                <div>
+                                    <h4>Dr. Robert Wilson</h4>
+                                    <p style="color: var(--cyan-glow); font-size: 0.8rem;">Orthopedic Surgeon</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;"><i class="ri-checkbox-circle-fill" style="color:#00ff80;"></i> Available Today</p>
+                                </div>
+                            </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; gap: 15px; align-items: center;">
+                                <img src="assets/doc_lisa.webp" onerror="this.src='assets/logo.webp'" alt="Dr. Lisa Patel" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cyan-glow);">
+                                <div>
+                                    <h4>Dr. Lisa Patel</h4>
+                                    <p style="color: var(--cyan-glow); font-size: 0.8rem;">General Physician</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;"><i class="ri-checkbox-circle-fill" style="color:#00ff80;"></i> Available Today</p>
+                                </div>
+                            </div>
+                            <div class="glass-card" style="padding: 20px; display: flex; gap: 15px; align-items: center;">
+                                <img src="assets/doc_james.webp" onerror="this.src='assets/logo.webp'" alt="Dr. James Taylor" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cyan-glow);">
+                                <div>
+                                    <h4>Dr. James Taylor</h4>
+                                    <p style="color: var(--cyan-glow); font-size: 0.8rem;">Dermatologist</p>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;"><i class="ri-checkbox-circle-fill" style="color:#00ff80;"></i> Available Today</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Department Allocation -->
+                    <div class="dash-section">
+                        <h2>Doctor Allocation by Department</h2>
+                        <div class="glass-card" style="padding: 20px;">
+                            <div style="margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>Cardiology</span>
+                                    <span>30%</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 30%; background: var(--cyan-glow); height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>Neurology</span>
+                                    <span>25%</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 25%; background: #00ff80; height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>Orthopedics</span>
+                                    <span>20%</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 20%; background: #ffc800; height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>Pediatrics</span>
+                                    <span>25%</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 25%; background: #ff4d4d; height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: On-Leave Doctors -->
+                    <div class="dash-section">
+                        <h2>On-Leave Doctors</h2>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div class="glass-card" style="padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; gap: 15px; align-items: center;">
+                                    <img src="assets/dr_michael_chen.webp" alt="Dr. Michael Chen" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                                    <div>
+                                        <h4 style="margin: 0; font-size: 0.95rem;">Dr. Michael Chen</h4>
+                                        <p style="margin: 0; font-size: 0.8rem; color: var(--text-muted);">Neurology</p>
+                                    </div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span class="status-badge" style="background: rgba(255,77,77,0.1); color: #ff4d4d;">Returning Oct 25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Top Performing Doctors -->
+                    <div class="dash-section">
+                        <h2>Top Rated by Patients</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-star-fill"></i></div>
+                                <div class="stat-details">
+                                    <h4 style="margin-bottom: 5px;">Dr. Sarah Johnson</h4>
+                                    <p style="color: #ffc800; font-size: 0.9rem;"><i class="ri-star-fill"></i> 4.9/5 (120 reviews)</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-star-fill"></i></div>
+                                <div class="stat-details">
+                                    <h4 style="margin-bottom: 5px;">Dr. Emily Davis</h4>
+                                    <p style="color: #ffc800; font-size: 0.9rem;"><i class="ri-star-fill"></i> 4.8/5 (95 reviews)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-appointments" class="tab-content">
                     <div class="dash-section">
@@ -329,10 +600,132 @@
                                         <td><span class="status-badge status-completed">Completed</span></td>
                                         <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button></td>
                                     </tr>
+                                    <tr>
+                                        <td>Diana Prince</td>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td>Oct 21, 2026</td>
+                                        <td>09:00 AM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Edward Kenway</td>
+                                        <td>Dr. Emily Davis</td>
+                                        <td>Oct 21, 2026</td>
+                                        <td>10:45 AM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiona Gallagher</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Oct 22, 2026</td>
+                                        <td>09:30 AM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>George Costanza</td>
+                                        <td>Dr. Michael Chen</td>
+                                        <td>Oct 22, 2026</td>
+                                        <td>11:00 AM</td>
+                                        <td><span class="status-badge status-completed">Completed</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hannah Abbott</td>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td>Oct 23, 2026</td>
+                                        <td>01:00 PM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ian Malcolm</td>
+                                        <td>Dr. Emily Davis</td>
+                                        <td>Oct 23, 2026</td>
+                                        <td>02:30 PM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Julia Roberts</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Oct 24, 2026</td>
+                                        <td>10:15 AM</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Today's Schedule Snapshot -->
+                    <div class="dash-section">
+                        <h2>Today's Schedule Snapshot</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-check-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>24</h3>
+                                    <p>Completed</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-time-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>12</h3>
+                                    <p>Upcoming</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,77,77,0.1); color: #ff4d4d;"><i class="ri-close-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>3</h3>
+                                    <p>Cancellations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Cancellation & No-Show Rates -->
+                    <div class="dash-section">
+                        <h2>Cancellation & No-Show Rates</h2>
+                        <div class="glass-card stat-card" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; gap: 20px;">
+                                <i class="ri-error-warning-line" style="font-size: 3rem; color: #ff4d4d;"></i>
+                                <div>
+                                    <h3 style="font-size: 2rem;">4.2%</h3>
+                                    <p style="color: var(--text-muted);">No-Show Rate</p>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <p style="color: #00ff80; font-weight: bold; font-size: 1.2rem;"><i class="ri-arrow-down-line"></i> 1.5%</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">vs Last Month</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Appointment by Department -->
+                    <div class="dash-section">
+                        <h2>Top Booked Departments</h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <span>1. Cardiology</span>
+                                <span style="color: var(--cyan-glow); font-weight: bold;">420 Appointments</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <span>2. Pediatrics</span>
+                                <span style="color: var(--cyan-glow); font-weight: bold;">385 Appointments</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>3. Orthopedics</span>
+                                <span style="color: var(--cyan-glow); font-weight: bold;">310 Appointments</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-departments" class="tab-content">
                     <div class="dash-section">
@@ -365,8 +758,169 @@
                                 <h3>Pediatrics</h3>
                                 <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Emily Davis</p>
                             </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-bone-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">10 Doctors</span>
+                                </div>
+                                <h3>Orthopedics</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Robert Wilson</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-eye-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">6 Doctors</span>
+                                </div>
+                                <h3>Ophthalmology</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Lisa Ray</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-flask-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">5 Doctors</span>
+                                </div>
+                                <h3>Oncology</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. James Smith</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-drop-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">4 Doctors</span>
+                                </div>
+                                <h3>Dermatology</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Maria Garcia</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-user-heart-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">7 Doctors</span>
+                                </div>
+                                <h3>Psychiatry</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. David Lee</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-scan-2-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">6 Doctors</span>
+                                </div>
+                                <h3>Radiology</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Anita Patel</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-shield-cross-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">8 Doctors</span>
+                                </div>
+                                <h3>Dentistry</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. John Doe</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-syringe-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">14 Doctors</span>
+                                </div>
+                                <h3>General Surgery</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. William Clark</p>
+                            </div>
+                            <div class="glass-card" style="padding: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <i class="ri-alarm-warning-line" style="font-size: 2rem; color: var(--cyan-glow);"></i>
+                                    <span style="background: rgba(0,240,255,0.1); color: var(--cyan-glow); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem;">20 Doctors</span>
+                                </div>
+                                <h3>Emergency</h3>
+                                <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 5px;">Head: Dr. Richard Roe</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Bed Occupancy Rate -->
+                    <div class="dash-section">
+                        <h2>Bed Occupancy Rate</h2>
+                        <div class="glass-card" style="padding: 20px;">
+                            <div style="margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>ICU (Intensive Care Unit)</span>
+                                    <span>85% (17/20 Beds)</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 85%; background: #ff4d4d; height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>General Ward</span>
+                                    <span>60% (60/100 Beds)</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 60%; background: var(--cyan-glow); height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                                    <span>Pediatrics Ward</span>
+                                    <span>45% (18/40 Beds)</span>
+                                </div>
+                                <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px;">
+                                    <div style="width: 45%; background: #00ff80; height: 100%; border-radius: 4px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Department Heads Directory -->
+                    <div class="dash-section">
+                        <h2>Department Heads Directory</h2>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>Head Doctor</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cardiology</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td>Ext: 101</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Neurology</td>
+                                        <td>Dr. Michael Chen</td>
+                                        <td>Ext: 102</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pediatrics</td>
+                                        <td>Dr. Emily Davis</td>
+                                        <td>Ext: 103</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Recent Equipment Maintenance -->
+                    <div class="dash-section">
+                        <h2>Recent Equipment Maintenance</h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">MRI Scanner</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Radiology Dept.</p>
+                                </div>
+                                <span class="status-badge status-completed">Serviced Today</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">ECG Machine</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Cardiology Dept.</p>
+                                </div>
+                                <span class="status-badge status-upcoming">Scheduled Tomorrow</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-reports" class="tab-content">
                     <div class="dash-section">
@@ -400,10 +954,134 @@
                                         <td>Oct 19, 2026</td>
                                         <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
                                     </tr>
+                                    <tr>
+                                        <td>#REP-1031</td>
+                                        <td>Charlie Brown</td>
+                                        <td>MRI Scan</td>
+                                        <td>Oct 18, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1032</td>
+                                        <td>Diana Prince</td>
+                                        <td>Urine Test</td>
+                                        <td>Oct 17, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1033</td>
+                                        <td>Edward Kenway</td>
+                                        <td>CT Scan</td>
+                                        <td>Oct 16, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1034</td>
+                                        <td>Fiona Gallagher</td>
+                                        <td>Blood Test</td>
+                                        <td>Oct 15, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1035</td>
+                                        <td>George Costanza</td>
+                                        <td>Endoscopy</td>
+                                        <td>Oct 15, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1036</td>
+                                        <td>Hannah Abbott</td>
+                                        <td>Ultrasound</td>
+                                        <td>Oct 14, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1037</td>
+                                        <td>Ian Malcolm</td>
+                                        <td>ECG</td>
+                                        <td>Oct 13, 2026</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">View / Share</button></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Pending Approvals -->
+                    <div class="dash-section">
+                        <h2>Pending Doctor Approvals</h2>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Report ID</th>
+                                        <th>Test Name</th>
+                                        <th>Generated Date</th>
+                                        <th>Assigned Doctor</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#REP-1045</td>
+                                        <td>Complete Blood Count</td>
+                                        <td>Today, 08:30 AM</td>
+                                        <td>Dr. Sarah Johnson</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Review</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#REP-1046</td>
+                                        <td>Chest X-Ray</td>
+                                        <td>Yesterday, 04:15 PM</td>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Review</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Most Common Tests -->
+                    <div class="dash-section">
+                        <h2>Test Distribution (This Month)</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,77,77,0.1); color: #ff4d4d;"><i class="ri-test-tube-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>45%</h3>
+                                    <p>Blood Tests</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-scan-2-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>30%</h3>
+                                    <p>X-Rays & Scans</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-microscope-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>25%</h3>
+                                    <p>Other Diagnostics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Urgent / Critical Results -->
+                    <div class="dash-section">
+                        <h2>Critical Reports <span class="status-badge" style="background: #ff4d4d; color: white;">Action Required</span></h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #ff4d4d;">
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Abnormal ECG Results</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">Patient: Edward Kenway | Report ID: #REP-1038</p>
+                            </div>
+                            <button onclick="window.location.href='404.html'" class="btn btn-primary" style="background: #ff4d4d; border: none; padding: 5px 15px;">View Immediately</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-payments" class="tab-content">
                     <div class="dash-grid">
@@ -453,10 +1131,104 @@
                                         <td>Insurance</td>
                                         <td><span class="status-badge status-upcoming">Processing</span></td>
                                     </tr>
+                                    <tr>
+                                        <td>#TRX-88914</td>
+                                        <td>Diana Prince</td>
+                                        <td>$250.00</td>
+                                        <td>Yesterday, 04:20 PM</td>
+                                        <td>Credit Card</td>
+                                        <td><span class="status-badge status-completed">Success</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#TRX-88915</td>
+                                        <td>Edward Kenway</td>
+                                        <td>$120.00</td>
+                                        <td>Yesterday, 01:10 PM</td>
+                                        <td>Cash</td>
+                                        <td><span class="status-badge status-completed">Success</span></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- New Section: Revenue Trends -->
+                    <div class="dash-section">
+                        <h2>Monthly Revenue Trend</h2>
+                        <div class="glass-card stat-card" style="padding: 20px; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; gap: 20px;">
+                                <i class="ri-line-chart-line" style="font-size: 3rem; color: #00ff80;"></i>
+                                <div>
+                                    <h3 style="font-size: 2rem;">$142,500</h3>
+                                    <p style="color: var(--text-muted);">Total Revenue (Oct 2026)</p>
+                                </div>
+                            </div>
+                            <div style="text-align: right;">
+                                <p style="color: #00ff80; font-weight: bold; font-size: 1.2rem;"><i class="ri-arrow-up-line"></i> 8.4%</p>
+                                <p style="font-size: 0.8rem; color: var(--text-muted);">vs September</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Outstanding Balances -->
+                    <div class="dash-section">
+                        <h2>Outstanding Balances (> 30 Days)</h2>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Patient Name</th>
+                                        <th>Invoice ID</th>
+                                        <th>Amount Due</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>George Costanza</td>
+                                        <td>#INV-7801</td>
+                                        <td style="color: #ff4d4d; font-weight: bold;">$450.00</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Send Reminder</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hannah Abbott</td>
+                                        <td>#INV-7905</td>
+                                        <td style="color: #ff4d4d; font-weight: bold;">$120.00</td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Send Reminder</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Payment Methods Breakdown -->
+                    <div class="dash-section">
+                        <h2>Payment Methods Breakdown</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,240,255,0.1); color: var(--cyan-glow);"><i class="ri-bank-card-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>65%</h3>
+                                    <p>Credit/Debit Card</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(0,255,128,0.1); color: #00ff80;"><i class="ri-shield-check-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>25%</h3>
+                                    <p>Health Insurance</p>
+                                </div>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px;">
+                                <div class="stat-icon" style="background: rgba(255,200,0,0.1); color: #ffc800;"><i class="ri-money-dollar-circle-line"></i></div>
+                                <div class="stat-details">
+                                    <h3>10%</h3>
+                                    <p>Cash Payments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-blogs" class="tab-content">
                     <div class="dash-section">
@@ -467,7 +1239,7 @@
                         <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
                             <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.02); padding: 15px; border-radius: 10px; border: 1px solid var(--glass-border); align-items: center;">
                                 <div style="width: 120px; height: 80px; border-radius: 8px; background: #ddd; overflow: hidden;">
-                                    <img src="assets/blog/blog1.webp" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="assets/blog_innovation.webp" alt="Heart Health Blog" style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div style="flex: 1;">
                                     <h4 style="margin-bottom: 5px;">Understanding Heart Health in 2026</h4>
@@ -480,7 +1252,7 @@
                             </div>
                             <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.02); padding: 15px; border-radius: 10px; border: 1px solid var(--glass-border); align-items: center;">
                                 <div style="width: 120px; height: 80px; border-radius: 8px; background: #ddd; overflow: hidden;">
-                                    <img src="assets/blog/blog2.webp" alt="Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                                    <img src="assets/blog_lifestyle.webp" alt="Sleep Cycle Blog" style="width: 100%; height: 100%; object-fit: cover;">
                                 </div>
                                 <div style="flex: 1;">
                                     <h4 style="margin-bottom: 5px;">Tips for a Better Sleep Cycle</h4>
@@ -491,14 +1263,103 @@
                                     <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; color: #ff4d4d; border-color: #ff4d4d;"><i class="ri-delete-bin-line"></i></button>
                                 </div>
                             </div>
+                            <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.02); padding: 15px; border-radius: 10px; border: 1px solid var(--glass-border); align-items: center;">
+                                <div style="width: 120px; height: 80px; border-radius: 8px; background: #ddd; overflow: hidden;">
+                                    <img src="assets/blog_nutrition.webp" alt="Nutrition Guide Blog" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div style="flex: 1;">
+                                    <h4 style="margin-bottom: 5px;">Nutrition Guide for Diabetics</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Published: Sep 28, 2026 | Author: Dr. Emily Davis</p>
+                                </div>
+                                <div style="display: flex; gap: 10px;">
+                                    <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px;"><i class="ri-pencil-line"></i></button>
+                                    <button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; color: #ff4d4d; border-color: #ff4d4d;"><i class="ri-delete-bin-line"></i></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- New Section: Article Performance -->
+                    <div class="dash-section">
+                        <h2>Top Performing Articles</h2>
+                        <div class="glass-card" style="padding: 15px; display: flex; flex-direction: column; gap: 15px;">
+                            <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Understanding Heart Health in 2026</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Views: 12,450 | Likes: 3,200</p>
+                                </div>
+                                <span style="color: #00ff80; font-weight: bold;"><i class="ri-bar-chart-2-line"></i> #1</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <h4 style="margin-bottom: 3px;">Tips for a Better Sleep Cycle</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Views: 9,820 | Likes: 1,450</p>
+                                </div>
+                                <span style="color: var(--cyan-glow); font-weight: bold;"><i class="ri-bar-chart-2-line"></i> #2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Drafts & Scheduled Posts -->
+                    <div class="dash-section">
+                        <h2>Drafts & Scheduled</h2>
+                        <div style="overflow-x: auto;">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Article Title</th>
+                                        <th>Author</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Managing Diabetes with Diet</td>
+                                        <td>Dr. Emily Davis</td>
+                                        <td><span class="status-badge status-upcoming">Scheduled: Oct 25</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Benefits of Daily Exercise</td>
+                                        <td>Dr. Robert Wilson</td>
+                                        <td><span class="status-badge status-completed" style="background: rgba(255,200,0,0.1); color: #ffc800;">Draft</span></td>
+                                        <td><button onclick="window.location.href='404.html'" class="btn btn-outline" style="padding: 5px 10px; font-size: 0.8rem;">Edit</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- New Section: Category Distribution -->
+                    <div class="dash-section">
+                        <h2>Posts by Category</h2>
+                        <div class="dash-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                            <div class="glass-card stat-card" style="padding: 15px; text-align: center;">
+                                <h3>42</h3>
+                                <p>Wellness</p>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px; text-align: center;">
+                                <h3>28</h3>
+                                <p>Cardiology</p>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px; text-align: center;">
+                                <h3>15</h3>
+                                <p>Pediatrics</p>
+                            </div>
+                            <div class="glass-card stat-card" style="padding: 15px; text-align: center;">
+                                <h3>30</h3>
+                                <p>Nutrition</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="tab-settings" class="tab-content">
                     <div class="dash-section">
                         <h2>System Settings</h2>
                         <div style="margin-top: 20px;">
-                            <form onsubmit="event.preventDefault();" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <form onsubmit="event.preventDefault(); document.querySelector('.dash-nav a[data-target=\'tab-dashboard\']').click();" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                                 <div class="form-group" style="grid-column: 1 / -1;">
                                     <h4 style="color: var(--cyan-glow); margin-bottom: 10px; border-bottom: 1px solid var(--glass-border); padding-bottom: 10px;">Hospital Details</h4>
                                 </div>
@@ -533,6 +1394,14 @@
                                 <div class="form-group" style="margin-bottom: 0; display: flex; align-items: center; gap: 10px; margin-top: 35px;">
                                     <input type="checkbox" checked id="maintenanceMode" style="width: 20px; height: 20px;">
                                     <label for="maintenanceMode" style="margin: 0; cursor: pointer;">Enable Email Notifications System-Wide</label>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0; display: flex; align-items: center; gap: 10px; margin-top: 15px; grid-column: 1 / -1;">
+                                    <input type="checkbox" id="smsNotifications" style="width: 20px; height: 20px;">
+                                    <label for="smsNotifications" style="margin: 0; cursor: pointer;">Enable SMS Alerts for Critical Updates</label>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0; display: flex; align-items: center; gap: 10px; margin-top: 15px; grid-column: 1 / -1;">
+                                    <input type="checkbox" id="autoBackup" checked style="width: 20px; height: 20px;">
+                                    <label for="autoBackup" style="margin: 0; cursor: pointer;">Daily Automatic Database Backup</label>
                                 </div>
                                 
                                 <div style="grid-column: 1 / -1; margin-top: 20px;">
